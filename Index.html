@@ -1,307 +1,479 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <title>Francis Einkauf Photography</title>
 
+
+
 <style>
 
+
+
 body{
+
 margin:0;
-font-family:Helvetica, Arial, sans-serif;
-background:#0c0c0c;
+
+font-family: Helvetica, Arial, sans-serif;
+
+background:#0d0d0d;
+
 color:white;
+
 }
+
+
 
 header{
+
 position:fixed;
+
 top:0;
+
 width:100%;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
+
 padding:20px 40px;
-background:rgba(0,0,0,.7);
+
+background:rgba(0,0,0,.6);
+
+backdrop-filter:blur(6px);
+
 z-index:10;
+
 }
+
+
 
 header h1{
-font-size:1em;
+
+font-size:1.2em;
+
 letter-spacing:2px;
+
 }
+
+
 
 nav a{
+
 color:white;
+
 text-decoration:none;
+
 margin-left:20px;
+
 font-size:.9em;
+
 }
+
+
 
 .hero{
+
 height:100vh;
+
 background:url("hero.jpg") center/cover no-repeat;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 text-align:center;
+
 }
+
+
 
 .hero-text{
+
 background:rgba(0,0,0,.5);
+
 padding:40px;
+
 }
+
+
 
 .hero-text h2{
-font-size:2.6em;
-margin-bottom:10px;
+
+font-size:2.5em;
+
+margin-bottom:15px;
+
 }
+
+
 
 section{
+
 padding:80px 10%;
+
 }
 
-h2{
-text-align:center;
-margin-bottom:40px;
-}
+
 
 .gallery{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
 gap:10px;
+
 }
+
+
 
 .gallery img{
+
 width:100%;
+
 cursor:pointer;
+
 transition:.3s;
+
 }
+
+
 
 .gallery img:hover{
+
 opacity:.8;
+
 }
 
-.categories{
-text-align:center;
-margin-bottom:50px;
-}
 
-.categories span{
-margin:0 10px;
-border-bottom:1px solid white;
-padding-bottom:2px;
-}
 
 .description{
+
 max-width:700px;
+
 margin:auto;
-line-height:1.7;
+
+line-height:1.6;
+
 text-align:center;
+
+font-size:1.1em;
+
 }
+
+
+
+.contact{
+
+text-align:center;
+
+margin-top:40px;
+
+}
+
+
 
 .button{
+
 border:1px solid white;
-padding:12px 24px;
+
+padding:12px 26px;
+
 text-decoration:none;
+
 color:white;
-display:inline-block;
+
 margin:10px;
+
+display:inline-block;
+
 transition:.3s;
+
 }
+
+
 
 .button:hover{
+
 background:white;
+
 color:black;
+
 }
+
+
 
 footer{
+
 text-align:center;
+
 padding:40px;
+
 opacity:.6;
+
+font-size:.9em;
+
 }
+
+
 
 .lightbox{
+
 position:fixed;
+
 top:0;
+
 left:0;
+
 width:100%;
+
 height:100%;
-background:black;
+
+background:rgba(0,0,0,.95);
+
 display:none;
+
 align-items:center;
+
 justify-content:center;
+
 }
+
+
 
 .lightbox img{
+
 max-width:90%;
+
 max-height:90%;
+
 }
 
+
+
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <header>
+
+
 
 <h1>Francis Einkauf Photography</h1>
 
+
+
 <nav>
-<a href="#portfolio">Portfolio</a>
-<a href="#second">Second Shooter</a>
+
+<a href="#work">Work</a>
+
+<a href="#about">About</a>
+
 <a href="#contact">Contact</a>
+
 </nav>
+
+
 
 </header>
 
 
+
+
+
 <div class="hero">
+
+
 
 <div class="hero-text">
 
+
+
 <h2>Film Photography</h2>
+
+
 
 <p>Low Light • Couples • Concerts • Combat • Calle • Double Exposures</p>
 
+
+
 </div>
 
+
+
 </div>
 
 
 
-<section id="portfolio">
 
-<h2>Selected Work</h2>
 
-<div class="categories">
+<section id="work">
 
-<span>Concerts</span>
-<span>Street</span>
-<span>Couples</span>
-<span>Combat</span>
-<span>Double Exposure</span>
 
-</div>
+
+<h2 style="text-align:center;margin-bottom:40px;">Selected Work</h2>
+
+
 
 <div class="gallery">
 
+
+
 <img src="photo1.jpg">
+
 <img src="photo2.jpg">
+
 <img src="photo3.jpg">
+
 <img src="photo4.jpg">
+
 <img src="photo5.jpg">
+
 <img src="photo6.jpg">
+
 <img src="photo7.jpg">
+
 <img src="photo8.jpg">
+
 <img src="photo9.jpg">
+
 <img src="photo10.jpg">
+
 <img src="photo11.jpg">
+
 <img src="photo12.jpg">
+
 <img src="photo13.jpg">
+
 <img src="photo14.jpg">
+
 <img src="photo15.jpg">
+
 <img src="photo16.jpg">
+
 <img src="photo17.jpg">
+
 <img src="photo18.jpg">
+
 <img src="photo19.jpg">
+
 <img src="photo20.jpg">
 
+
+
 </div>
+
+
 
 </section>
 
 
 
-<section id="second">
 
-<h2>Second Shooter for Weddings</h2>
+
+<section id="about">
+
+
 
 <div class="description">
 
-<p>
 
-I am a film photographer experienced working in low light and fast-moving environments such as concerts, street photography, and combat sports.
-
-</p>
 
 <p>
 
-My work focuses on candid moments, natural interactions, and storytelling. These skills translate naturally to wedding photography where capturing authentic moments is essential.
+
+
+Film photographer focusing on real moments and available light.  
+
+My work ranges from concerts and street photography to couples, combat sports, and experimental double exposures.
+
+
 
 </p>
+
+
 
 <p>
 
-I am currently seeking opportunities to work as a <strong>second shooter for weddings</strong> to support primary photographers and continue expanding my experience documenting important events.
+
+
+Currently seeking opportunities as a <strong>second shooter for weddings</strong> to expand my experience documenting intimate and candid moments.
+
+
 
 </p>
+
+
 
 </div>
 
-<div style="text-align:center;margin-top:30px;">
 
-<a class="button" href="mailto:your@email.com">
-Hire Me as a Second Shooter
-</a>
-
-</div>
 
 </section>
+
+
 
 
 
 <section id="contact">
 
-<h2>Contact</h2>
 
-<div style="text-align:center;">
+
+<div class="contact">
+
+
 
 <a class="button" href="mailto:your@email.com">
-Email
+
+Contact for Second Shooter Work
+
 </a>
+
+
 
 <a class="button" href="https://instagram.com/panchos.pictures" target="_blank">
+
 Instagram
+
 </a>
 
+
+
 </div>
+
+
 
 </section>
 
 
+
+
+
 <footer>
+
+
 
 © 2026 Francis Einkauf Photography
 
+
+
 </footer>
-
-
-
-<div class="lightbox" id="lightbox">
-<img id="lightbox-img">
-</div>
-
-
-<script>
-
-const images=document.querySelectorAll(".gallery img");
-const lightbox=document.getElementById("lightbox");
-const lightboxImg=document.getElementById("lightbox-img");
-
-images.forEach(img=>{
-img.onclick=()=>{
-lightbox.style.display="flex";
-lightboxImg.src=img.src;
-}
-});
-
-lightbox.onclick=()=>{
-lightbox.style.display="none";
-}
-
-</script>
-
-</body>
-</html>
